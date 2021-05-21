@@ -1,0 +1,186 @@
+
+.about_Class {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(204,204,204,1);
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+	.about_Class a span {
+		text-emphasis: none;
+	}
+
+.about_nav {
+	height: 14%;
+	width: 100%;
+	left: 0%;
+	top: 0%;
+	position: absolute;
+	overflow: visible;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.about_Home_Class {
+	text-decoration: none;
+	left: 62.5%;
+	top: 45%;
+	position: absolute;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 240%;
+	color: rgba(0,0,0,1);
+}
+
+.about_About_Us_Class {
+	text-decoration: none;
+	left: 73%;
+	top: 45%;
+	position: absolute;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 240%;
+	color: rgba(0,0,0,1);
+}
+
+.about_Contact_Class {
+	text-decoration: none;
+	left: 87.5%;
+	top: 45%;
+	height: auto;
+	width: auto;
+	position: absolute;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 240%;
+	color: rgba(0,0,0,1);
+}
+
+.space_Class_about {
+	position: absolute;
+	width: 65%;
+	height: 80%;
+	left: -5%;
+	top: 0%;
+	overflow: visible;
+}
+
+.Our_story {
+	left: 73%;
+	top: 22%;
+	position: absolute;
+	overflow: visible;
+	text-align: left;
+	width: 90%;
+	font-family: Times New Roman;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+
+.Our_story_1 {
+	left: 53%;
+	top: 35%;
+	position: absolute;
+	overflow: visible;
+	text-align: right;
+	width: auto;
+	font-family: Bell MT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 145%;
+	color: rgba(0,0,0,1);
+}
+
+.Our_Mission {
+	left: 70%;
+	top: 56%;
+	width: auto;
+	position: absolute;
+	overflow: visible;
+	text-align: left;
+	width: 309px;
+	font-family: Times New Roman;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+
+.Our_Mission_1 {
+	left: 50%;
+	top: 70%;
+	width: auto;
+	position: absolute;
+	overflow: visible;
+	text-align: right;
+	font-family: Bell MT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 145%;
+	color: rgba(0,0,0,1);
+}
+
+.sec2 {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	height: 55%;
+	overflow: hidden;
+}
+
+	.sec2 .Our_Vision {
+		left: 12%;
+		top: 15%;
+		width: auto;
+		position: absolute;
+		overflow: visible;
+		text-align: left;
+		width: 309px;
+		font-family: Times New Roman;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+
+	.sec2 .Our_Vision_1 {
+		left: 6%;
+		top: 35%;
+		width: 180%;
+		position: absolute;
+		overflow: visible;
+		text-align: left;
+		font-family: Bell MT;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 145%;
+		color: rgba(0,0,0,1);
+	}
+
+	.sec2 .bike_Class_about {
+		position: absolute;
+		width: 446;
+		height: 720;
+		left: 50%;
+		top: -12%;
+		overflow: visible;
+	}

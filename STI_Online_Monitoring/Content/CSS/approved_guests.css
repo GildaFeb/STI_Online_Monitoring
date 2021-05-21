@@ -1,0 +1,397 @@
+
+.approved_Class {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204,204,204,1);
+    overflow: hidden;
+}
+
+.approved_arrow {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80px;
+    width: 120px;
+}
+
+.approved_arrow_1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 50px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: absolute;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+.approved_box {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+}
+
+.approved_title {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    height: 85%;
+    top: 0%;
+    left: 30%;
+}
+
+.approved_title_1 {
+    top: 8%;
+    position: relative;
+    color: #003366;
+    font-size: 57px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 12px 22px;
+    background-color: #ffcc00;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.approved_boxx {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 82%;
+    border-radius: 30px;
+    background-color: #ebebeb;
+}
+
+.approved_box1 {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #ffcc00;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.approved_t1 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 16%;
+}
+
+.approved_N1 {
+    left: 28%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t2 {
+    position: absolute;
+    left: 16%;
+    top: 0%;
+    height: 100%;
+    width: 5%;
+}
+
+.approved_N2 {
+    left: 5%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t3 {
+    position: absolute;
+    left: 21%;
+    top: 0%;
+    height: 100%;
+    width: 15%;
+}
+
+.approved_N3 {
+    left: 10%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t4 {
+    position: absolute;
+    left: 36%;
+    top: 0%;
+    height: 100%;
+    width: 17%;
+}
+
+.approved_N4 {
+    left: 25%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t5 {
+    position: absolute;
+    left: 53%;
+    top: 0%;
+    height: 100%;
+    width: 11%;
+}
+
+.approved_N5 {
+    left: 27%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t6 {
+    position: absolute;
+    left: 64%;
+    top: 0%;
+    height: 100%;
+    width: 14%;
+}
+
+.approved_N6 {
+    left: 6%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t7 {
+    position: absolute;
+    left: 78%;
+    top: 0%;
+    height: 100%;
+    width: 11%;
+}
+
+.approved_N7 {
+    left: 20%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_t8 {
+    position: absolute;
+    left: 89%;
+    top: 0%;
+    height: 100%;
+    width: 11%;
+}
+
+.approved_N8 {
+    left: 0%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_linebox {
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    height: 78%;
+}
+
+.approved_line1 {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 15.4%;
+    background-color: #92a5b8;
+    overflow: hidden;
+}
+
+.approved_CE_size_name {
+    left: 2%;
+    top: 30%;
+    width: 210px;
+    height: 35.2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.approved_CE_size_age {
+    left: 17.5%;
+    top: 30%;
+    width: 30px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_email_add {
+    left: 22%;
+    top: 30%;
+    width: 200px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_mobile_num {
+    left: 38%;
+    top: 30%;
+    width: 196px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_addr {
+    left: 53%;
+    top: 30%;
+    width: 160px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_Date_time {
+    left: 65%;
+    top: 30%;
+    width: 173.43px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_Dept {
+    left: 79%;
+    top: 30%;
+    width: 120px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_size_Transc {
+    left: 89%;
+    top: 30%;
+    width: 130px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_CE_style {
+    left: 0%;
+    top: 0%;
+    position: relative;
+    color: #003366;
+    font-size: 27px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.approved_box_arrow {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    top: 0%;
+    left: 0%;
+}
+
+.approved_arrowb {
+    position: relative;
+    top: -11%;
+    left: 40%;
+}
+
+.approved_arrown {
+    position: absolute;
+    top: -11%;
+    left: 56%;
+    color: #ffcc00;
+}
+
+.approved_arrow_style {
+    list-style-type: none;
+    color: #ffcc00;
+    font-size: 35px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: absolute;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+.approved_count_pos {
+    position: absolute;
+    top: 0%;
+    left: 49%;
+}
+
+.approved_count_style {
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}

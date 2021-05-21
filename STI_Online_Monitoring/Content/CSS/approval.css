@@ -1,0 +1,123 @@
+
+.Approval_Class {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(204,204,204,1);
+	overflow: hidden;
+	background: url(../pic/bgbg.png) no-repeat;
+	background-size: cover;
+}
+
+	.Approval_Class a span {
+		text-emphasis: none;
+	}
+
+.box_Approval {
+	top: 8%;
+	left: 1%;
+	width: 37%;
+	height: 90%;
+	position: absolute;
+	overflow: hidden;
+	border: 7px solid transparent;
+	border-color: rgba(0,0,0,1);
+	box-shadow: 0 10px 15px rgba(0,0,0,.2);
+}
+
+.Approval_box1 {
+	top: 1%;
+	left: 1%;
+	right: 1%;
+	width: 98%;
+	height: 49%;
+	position: relative;
+}
+
+.Approval_Rectangle_1_Class {
+	fill: rgba(0,0,0,1);
+}
+
+.Approval_id {
+	left: 35%;
+	top: 15px;
+	position: relative;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 350%;
+	color: #082e67;
+}
+
+.Approval_Req {
+	left: 32%;
+	top: 65px;
+	text-decoration: none;
+	color: #09375f;
+	position: relative;
+	overflow: visible;
+	/* width: 118px; */
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 205%;
+	background: #ffcc00;
+	padding: 2% 5%;
+	border-radius: 20px;
+	border: 2px solid #ffcc00;
+	transition: all 0.3s ease;
+}
+
+	.Approval_Req:hover {
+		color: #282e7a;
+		background: #fde395;
+	}
+
+.Approval_Apr {
+	left: 30%;
+	top: 130px;
+	text-decoration: none;
+	color: #09375f;
+	position: relative;
+	overflow: visible;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 205%;
+	background: #ffcc00;
+	padding: 2% 5%;
+	border-radius: 20px;
+	border: 2px solid #ffcc00;
+	transition: all 0.3s ease;
+}
+
+	.Approval_Apr:hover {
+		color: #282e7a;
+		background: #fde395;
+	}
+
+.Approval_Rectangle_1 {
+	position: relative;
+	overflow: visible;
+	width: 95%;
+	height: 14px;
+	top: 1%;
+	left: 5%;
+}
+
+.Approval_box2 {
+	top: 0%;
+	left: 1%;
+	right: 1%;
+	width: 98%;
+	height: 47%;
+	position: relative;
+	border: 7px solid transparent;
+}

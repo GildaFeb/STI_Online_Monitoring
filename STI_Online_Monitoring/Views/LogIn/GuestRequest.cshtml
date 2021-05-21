@@ -1,0 +1,384 @@
+﻿@model STI_Online_Monitoring.Models.VisitModel
+
+<head>
+    <link href="../../Content/CSS/GuestRequestTable.css" rel="stylesheet" />
+</head>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<body style="background-color: #003366">
+    <div>
+        <header class="navbar navbar-inverse set-radius-zero" style=" background-color: yellow; margin-top:-50px; font-style:oblique; ">
+        </header>
+        <div>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for date.." title="Type in a name">
+
+
+        </div>
+        <div class="table-responsive">
+            <div class="row" style="margin:2%">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            YOUR INFORMATION
+                        </div>
+                        <div class="panel-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#RequestModal" onclick="clearTextBox(@Session["GuestID"]);">Request to Visit</button><br /><br />
+                            <div class="table-responsive row" style="margin:1%">
+                                @if (Model != null)
+                                {
+                                    if (Model.Visitinfo.Count > 0)
+                                    {
+                                        <table class="table table-striped table-bordered table-hover" id="RequestTable">
+                                            <thead>
+                                                <tr class="header">
+                                                    <th>
+                                                        VisitID
+                                                    </th>
+                                                    <th>
+                                                        DateOfVisit
+                                                    </th>
+                                                    <th>
+                                                        TimeIn
+                                                    </th>
+                                                    <th>
+                                                        TimeOut
+                                                    </th>
+                                                    <th>
+                                                        Department
+                                                    </th>
+                                                    <th>
+                                                        Transaction
+                                                    </th>
+                                                    <th></th>
+
+                                                </tr>
+
+                                                @foreach (var item in Model.Visitinfo)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.VisitLogID)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.DateOfVisit)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.TimeIn)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.TimeOut)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.Department)
+                                                        </td>
+                                                        <td>
+                                                            @Html.DisplayFor(modelItem => item.Transactions)
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary" onclick="UpdateRequest();">Edit</button> |
+                                                            <button type="button" class="btn btn-success" onclick="DeleteRequest(@item.GuestID);">Delete</button>
+                                                            <button type="button" class="btn btn-warning" onclick="">Add Other Transaction</button>
+                                                        </td>
+                                                    </tr>
+
+                                                }
+
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <b>No Details Found.</b>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- **************************************  MY INFORMATION: POP UP   ******************************-->
+        <div class="modal fade" id="RequestModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#003366; color:white">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="jGuestID">GuestID</label>
+
+                                <input type="text" data-val="true" class="form-control col-lg-12" id="jGuestID" value="@Session["GuestID"]" disabled="disabled" />
+                            </div>
+                            <div class="form-group">
+                                <label for="jDateOfVisit">Date Of Visit</label>
+                                <input type="date" data-val="true" class="form-control col-lg-12" id="jDateOfVisit" minDate="-0" maxDate="+0M +4D" />
+                            </div>
+                            <div class="form-group">
+                                <label for="jTimeIn">Time In</label>
+                                <input data-val="true" type="time" class="form-control col-lg-12" id="jTimeIn" />
+                            </div>
+                            <div class="form-group">
+                                <label for="jTimeOut">Time Out</label>
+                                <input data-val="true" type="time" class="form-control col-lg-12" id="jTimeOut" />
+                            </div>
+                            <div class="form-group">
+                                <label for="jDepartment">Department</label>
+                                @Html.DropDownList("Department", new List<SelectListItem>
+                                    {
+                                      new SelectListItem{ Text="Cashier", Value = "Cashier" },
+                                      new SelectListItem{ Text="Registrar", Value = "Registrar" },
+                                      new SelectListItem{ Text="Admission", Value = "Admission" },
+                                      new SelectListItem{ Text="Proware", Value = "Proware" },
+                                      new SelectListItem{ Text="Library", Value = "Library" },
+                                      new SelectListItem{ Text="Faculty", Value = "Faculty" }
+                                    }, new { type = "text", @class = "form-control col-lg-12", id = "jDepartment" })
+                            </div>
+                            <div class="form-group">
+                                <label for="jTransaction"> Transaction </label>
+                                <input type="text" min="50" class="form-control col-lg-12" id="jTransaction" placeholder="e.g., Payment for Tuition" />
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary col-lg-6 " id="btnAdd" onclick="return AddRequest();">Submit</button>
+                        <button type="button" class="btn btn-primary" id="jbtnUpdate" style="display:none;" onclick="UpdateRequest();">Update</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    //Add Data Function
+    function AddRequest() {
+        var res = validateGuest();
+        if (res == false) {
+            return false;
+        }
+        var empObj = {
+            GuestID: $('#jGuestID').val(),
+            DateOfVisit: $('#jDateOfVisit').val(),
+            TimeIn: $('#jTimeIn').val(),
+            TimeOut: $('#jTimeOut').val(),
+            Department: $('#jDepartment').val(),
+            Transactions: $('#jTransaction').val()
+        };
+        var ans = confirm("Add Request Form. Do you want to Continue?");
+        if (ans) {
+            $.ajax({
+                url: "/LogIn/AddRequest",
+                data: JSON.stringify(empObj),
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+
+                    $('#RequestModal').modal('hide');
+                    alert("Form Request Added Successfully.");
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
+            })
+
+        }
+    }
+
+    //function for updating employee's record
+    function UpdateRequest() {
+
+        if (res == false) {
+            return false;
+        }
+        var empObj = {
+            DateOfVisit: $('#GuestID').val(),
+            DateOfVisit: $('#DateOfVisit').val(),
+            TimeIn: $('#jTimeIn').val(),
+            TimeOut: $('#jTimeOut').val(),
+            Department: $('#jDepartment').val(),
+            Transactions: $('#jTransaction').val()
+        };
+        $.ajax({
+            url: "/LogIn/UpdateRequest",
+            data: JSON.stringify(empObj),
+            type: "POST",
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                loadData();
+                $('#jRequestModal').modal('hide');
+                $('#jGuestID').val("");
+                $('#jDateOfVisit').val("");
+                $('#jTimeIn').val("");
+                $('#jTimeOut').val("");
+                $('#jDepartment').val("");
+                $('#jTransaction').val("");
+                alert("Form Added Successfully");
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+
+    //function for deleting employee's record
+    function DeleleRequest(ID) {
+        var ans = confirm("Are you sure you want to delete this Record?");
+        if (ans) {
+            $.ajax({
+                url: "/LogIn/DeleteRequest/" + ID,
+                type: "POST",
+                contentType: "application/json;charset=UTF-8",
+                dataType: "json",
+                success: function (result) {
+                    loadData();
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
+            });
+        }
+    }
+
+    //Function for clearing the textboxes
+    function clearTextBox(GuestID) {
+        if (res == false) {
+            return false;
+        }
+        $('#jDateOfVisit').val("");
+        $('#jGuestID').val(GuestID);
+        $('#jTimeIn').val("");
+        $('#jTimeOut').val("");
+        $('#jDepartment').val("");
+        $('#jTransaction').val("");
+        $('#jbtnUpdate').hide();
+        $('#btnAdd').show();
+        $('#jDateOfVisit').css('border-color', 'lightgrey');
+        $('#jTimeIn').css('border-color', 'lightgrey');
+        $('#jTimeOut').css('border-color', 'lightgrey');
+        $('#jDepartment').css('border-color', 'lightgrey');
+        $('#jTransaction').css('border-color', 'lightgrey');
+
+
+    }
+    //Valdidation using jquery
+    function validateGuest() {
+        var isValid = true;
+        if ($('#jGuestID').val().trim() == "") {
+            $('#jGuestID').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jGuestID').css('border-color', 'lightgrey');
+        }
+        if ($('#jTimeIn').val().trim() == "") {
+            $('#jTimeIn').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jTimeIn').css('border-color', 'lightgrey');
+        }
+        if ($('#jTimeOut').val().trim() == "") {
+            $('#jTimeOut').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jTimeOut').css('border-color', 'lightgrey');
+        }
+        if ($('#jDateOfVisit').val().trim() == "") {
+            $('#jDateOfVisit').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jDateOfVisit').css('border-color', 'lightgrey');
+        }
+
+        if ($('#jDepartment').val().trim() == "") {
+            $('#jDepartment').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jDepartment').css('border-color', 'lightgrey');
+        }
+        if ($('#jTransaction').val().trim() == "") {
+            $('#jTransaction').css('border-color', 'Red');
+            isValid = false;
+        }
+        else {
+            $('#jTransaction').css('border-color', 'lightgrey');
+        }
+        return isValid;
+    }
+
+</script>
+
+<!--=================== STYLE ==============================-->
+<style>
+    #RequestTable {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #RequestTable td, #RequestTable th {
+            border: 1px solid #FFFFF0;
+            padding: 8px;
+        }
+
+        #RequestTable tr:nth-child(even) {
+            background-color: #FFFFF0;
+        }
+
+        #RequestTable tr:hover {
+            background-color: #ddd;
+        }
+
+        #RequestTable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #003366;
+            color: white;
+        }
+</style>
+<script src="../../Content/assets/js/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="../../Content/assets/js/bootstrap.js"></script>
+<!-- CUSTOM SCRIPTS  -->
+<script src="../../Content/assets/js/custom.js">
+
+</script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

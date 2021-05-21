@@ -1,0 +1,354 @@
+
+.approving_students_Class {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204,204,204,1);
+    overflow: hidden;
+}
+
+    .approving_students_Class a span {
+        text-emphasis: none;
+    }
+
+.approving_students_nav {
+    height: 14%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    position: relative;
+    overflow: visible;
+}
+
+.approving_students_title {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 0%;
+    left: 2%;
+}
+
+.approving_students_title_1 {
+    top: 8%;
+    position: relative;
+    color: #003366;
+    font-size: 55px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 12px 22px;
+    background-color: #ffcc00;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.approving_students_Home_Class {
+    text-decoration: none;
+    left: 62.5%;
+    top: 45%;
+    position: absolute;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 240%;
+    color: rgba(0,0,0,1);
+}
+
+.approving_students_About_Us_Class {
+    text-decoration: none;
+    left: 73%;
+    top: 45%;
+    position: absolute;
+    overflow: visible;
+    width: 188px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 240%;
+    color: rgba(0,0,0,1);
+}
+
+.approving_students_Contact_Class {
+    text-decoration: none;
+    left: 87.5%;
+    top: 45%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 240%;
+    color: rgba(0,0,0,1);
+}
+
+.approving_students_boxx {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 82%;
+    background-color: #ebebeb;
+    border-radius: 30px;
+}
+
+.approving_students_box1 {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #ffcc00;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.approving_students_t1 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 25%;
+}
+
+.approving_students_N1 {
+    left: 6%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approving_students_t2 {
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    height: 100%;
+    width: 28%;
+}
+
+.approving_students_N2 {
+    left: 32%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approving_students_t3 {
+    position: absolute;
+    left: 53%;
+    top: 0%;
+    height: 100%;
+    width: 25%;
+}
+
+.approving_students_N3 {
+    left: 53%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approving_students_t4 {
+    position: absolute;
+    left: 78%;
+    top: 0%;
+    height: 100%;
+    width: 22%;
+}
+
+.approving_students_N4 {
+    left: 28%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approving_students_linebox {
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    height: 78%;
+}
+
+.approving_students_line1 {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 15.4%;
+    background-color: #92a5b8;
+    overflow: hidden;
+}
+
+.approving_students_CE_size_num {
+    left: 2%;
+    top: 30%;
+    width: 182.89px;
+    height: 35.2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.approving_students_CE_size_emailadd {
+    top: 30%;
+    left: 20%;
+    width: 602.55px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approving_students_CE_size_Date-time {
+    top: 30%;
+    left: 65%;
+    width: 190px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approving_students_CE_size_reason {
+    top: 30%;
+    left: 84.5%;
+    width: 110px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approving_students_CE_style {
+    left: 0%;
+    top: 0%;
+    position: relative;
+    color: #003366;
+    font-size: 27px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.approving_students_box_arrow {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    top: 0%;
+    left: 0%;
+}
+
+.approving_students_arrowb {
+    position: relative;
+    top: -11%;
+    left: 40%;
+}
+
+.approving_students_arrown {
+    position: absolute;
+    top: -11%;
+    left: 56%;
+}
+
+.approving_students_arrow_style {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 35px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: absolute;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+    ;
+}
+
+.approving_students_count_pos {
+    position: absolute;
+    top: 0%;
+    left: 49%;
+}
+
+.approving_students_count_style {
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approving_students_bttn1 {
+    position: absolute;
+    left: 2%;
+    top: 0%;
+    height: 70px;
+    width: 11%;
+}
+
+.approving_students_bttn2 {
+    position: absolute;
+    left: 14%;
+    top: 0%;
+    height: 70px;
+    width: 11%;
+}
+
+.approving_students_btn {
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    background: none;
+    color: #0e4169;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: .3s;
+    background-color: #fecd00;
+}
+
+    .approving_students_btn:hover {
+        opacity: .7;
+    }

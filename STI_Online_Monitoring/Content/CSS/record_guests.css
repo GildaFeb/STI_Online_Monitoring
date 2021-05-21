@@ -1,0 +1,165 @@
+.record_guests_Class {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204,204,204,1);
+    overflow: hidden;
+}
+
+.record_guests_arrow {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80px;
+    width: 120px;
+}
+
+.record_guests_arrow_1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 50px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: relative;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+    
+}
+
+.record_guests_box {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+}
+
+.record_guests_title {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    height: 85%;
+    top: 0%;
+    left: 29%;
+}
+
+.record_guests_title_1 {
+    top: 8%;
+    position: relative;
+    color: #003366;
+    font-size: 57px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 12px 22px;
+    background-color: #ffcc00;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.record_guests_Cointiner_search {
+    top: 35%;
+    left: 65%;
+    width: 450px;
+    height: 45px;
+    position: absolute;
+}
+
+.record_guests_search {
+    width: 80%;
+    height: 100%;
+    font-size: 17px;
+    padding: 10px 5px;
+    font-family: century gothic;
+    font-style: normal;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #444444;
+}
+
+.record_guests_sub {
+    position: absolute;
+    width: 7%;
+    height: 80%;
+    left: 80%;
+    top: 20%;
+    border-bottom: 2px solid #444444;
+}
+
+.record_guests_submit {
+    width: 88%;
+    height: 83%;
+    cursor: pointer;
+    background-image: url(../pic/search.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: transparent;
+}
+
+    .record_guests_submit:hover {
+        opacity: .10;
+    }
+.record_guests_boxx {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 78%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.record_guests_Rectangle_11 {
+    position: absolute;
+    overflow: visible;
+    width: 97%;
+    height: 30px;
+    top: 97%;
+    left: 33%;
+}
+
+.record_guests_Rectangle_1_Class1 {
+    fill: #063163;
+}
+
+.record_guests_Rectangle_12 {
+    position: absolute;
+    overflow: visible;
+    width: 97%;
+    height: 30px;
+    top: 94%;
+    left: 37%;
+}
+
+.record_guests_Rectangle_1_Class2 {
+    fill: #f8cd05;
+}

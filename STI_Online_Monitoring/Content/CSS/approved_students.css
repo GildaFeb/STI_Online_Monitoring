@@ -1,0 +1,280 @@
+
+.approved_students_Class {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204,204,204,1);
+    overflow: hidden;
+}
+
+.approved_students_arrow {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80px;
+    width: 120px;
+}
+
+.approved_students_arrow_1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 50px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: absolute;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+.approved_students_box {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+}
+
+.approved_students_title {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    height: 85%;
+    top: 0%;
+    left: 30%;
+}
+
+.approved_students_title_1 {
+    top: 8%;
+    position: relative;
+    color: #003366;
+    font-size: 57px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+    padding: 12px 22px;
+    background-color: #ffcc00;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.approved_students_boxx {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 82%;
+    background-color: #ebebeb;
+    border-radius: 30px;
+}
+
+.approved_students_box1 {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #ffcc00;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.approved_students_t1 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 25%;
+}
+
+.approved_students_N1 {
+    left: 6%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_students_t2 {
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    height: 100%;
+    width: 28%;
+}
+
+.approved_students_N2 {
+    left: 32%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_students_t3 {
+    position: absolute;
+    left: 53%;
+    top: 0%;
+    height: 100%;
+    width: 25%;
+}
+
+.approved_students_N3 {
+    left: 53%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_students_t4 {
+    position: absolute;
+    left: 78%;
+    top: 0%;
+    height: 100%;
+    width: 22%;
+}
+
+.approved_students_N4 {
+    left: 28%;
+    top: 38%;
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.approved_students_linebox {
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    height: 78%;
+}
+
+.approved_students_line1 {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 15.4%;
+    background-color: #92a5b8;
+    overflow: hidden;
+}
+
+.approved_students_CE_size_num {
+    left: 2%;
+    top: 30%;
+    width: 182.89px;
+    height: 35.2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.approved_students_CE_size_emailadd {
+    top: 30%;
+    left: 20%;
+    width: 602.55px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_students_CE_size_Date-time {
+    top: 30%;
+    left: 65%;
+    width: 190px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_students_CE_size_reason {
+    top: 30%;
+    left: 84.5%;
+    width: 110px;
+    height: 35.2px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.approved_students_CE_style {
+    left: 0%;
+    top: 0%;
+    position: relative;
+    color: #003366;
+    font-size: 27px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.approved_students_box_arrow {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    top: 0%;
+    left: 0%;
+}
+
+.approved_students_arrowb {
+    position: relative;
+    top: -11%;
+    left: 40%;
+}
+
+.approved_students_arrown {
+    position: absolute;
+    top: -11%;
+    left: 56%;
+}
+
+.approved_students_arrow_style {
+    list-style-type: none;
+    color: #ffcc00;
+    font-size: 35px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bolder;
+    position: absolute;
+    text-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+.approved_students_count_pos {
+    position: absolute;
+    top: 0%;
+    left: 49%;
+}
+
+.approved_students_count_style {
+    position: relative;
+    color: #003366;
+    font-size: 32px;
+    white-space: nowrap;
+    font-family: century gothic;
+    font-style: normal;
+    font-weight: bolder;
+}

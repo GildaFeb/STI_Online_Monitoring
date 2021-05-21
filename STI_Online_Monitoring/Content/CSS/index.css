@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finpo</title>
+</head>
+<body>
+    <div class="Finpo_Class">
+    <svg class="Rectangle_1">
+        <rect class="Rectangle_1_Class" rx="0%" ry="0%" x="0%" y="0%" width="22%" height="100%">
+        </rect>
+    </svg>
+    <svg class="Rectangle_2">
+        <rect class="Rectangle_2_Class" rx="0%" ry="0%" x="0%" y="0%" width="22%" height="100%">
+        </rect>
+    </svg>
+    <div class="nav">
+        <ul>
+            <li class="Home_Class">@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="About_Us_Class">@Html.ActionLink("About Us", "About", "Home")</li>
+            <li class="Contact_Class">@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </ul>
+    </div>
+    <div class="STI_College_San_Jose_Del_Monte_Class">
+        <span>STI College San Jose Del Monte's <br />Online Monitoring System</span>
+    </div>
+    <div class="Paperless_Contactless_Less-_Ha_Class">
+        <span>Paperless. Contactless. Less-Hassle.</span>
+    </div>
+    <img class="talk_Class" src="~/Content/pic/talk.png" srcset="~/Content/pic/talk.png 1x">
+    <div>
+        <ul>
+            <li><span class="Guest">@Html.ActionLink("Guest", "Guestform", "Home")</span></li>
+            <li><span class="Student">@Html.ActionLink("No I.D.", "Studentform", "Home")</span></li>
+            <svg class="Line_1" viewBox="0 0 5 83.5">
+                <path class="Line_1_Class" d="M 0 0 L 0 83.5">
+                </path>
+            </svg>
+            <li><span class="G_A">@Html.ActionLink("Log In", "login", "Home")</span></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

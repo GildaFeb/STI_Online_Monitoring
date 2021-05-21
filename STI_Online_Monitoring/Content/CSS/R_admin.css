@@ -1,0 +1,122 @@
+.R_admin {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    background: url(../img/homepage.jpg) no-repeat;
+    background-size: cover;
+}
+.R_admin a span{
+	text-emphasis: none;
+}
+.box_R_admin{
+	top: 5%;
+	left: 30%;
+	width: 37%;
+	height: 90%;
+	position: absolute;
+    overflow: hidden;
+	border: 7px solid transparent;
+	border-color: rgba(0,0,0,1);
+	box-shadow: 0 10px 15px rgba(0,0,0,.2);
+}
+.R_admin_box1{
+    top: 1%;
+	left: 1%;
+    right:1%;
+	width: 98%;
+	height: 49%;
+	position: relative;
+}
+.R_admin_id{
+    left: 31%;
+	top: 200px;
+	position: relative;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 400%;
+	color: #082e67;
+}
+.R_admin_Req {
+	left: 25%;
+	top: 250px;
+    text-decoration: none;
+    color: #09375f;
+	position: relative;
+	overflow: visible;
+	/* width: 118px; */
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 250%;
+    background: #ffcc00;
+    padding: 2% 14%;
+    border-radius: 20px;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
+}
+.R_admin_Req:hover{
+    color: #282e7a;
+    background: #fde395;
+}
+.R_admin_Req a {
+	color: #09375f;
+}
+	.R_admin_Apr{
+	left: 23.7%;
+	top: 320px;
+    text-decoration: none;
+    color: #09375f;
+	position: relative;
+	overflow: visible;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 240%;
+    background: #ffcc00;
+    padding: 2% 15%;
+    border-radius: 20px;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
+}
+.R_admin_Apr:hover{
+    color: #282e7a;
+    background: #fde395;
+}
+.R_admin_Apr a {
+	color: #09375f;
+}
+.C_acc {
+	left: 19.4%;
+	top: 560px;
+	text-decoration: none;
+	position: absolute;
+	overflow: visible;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 150%;
+	background: #003366;
+	padding: 2% 15%;
+	border-radius: 20px;
+	border: 2px solid #003366;
+	transition: all 0.3s ease;
+}
+
+	.C_acc:hover {
+		color: white;
+		opacity: 80%;
+	}
+
+.C_acc a {
+	color: white;
+}
